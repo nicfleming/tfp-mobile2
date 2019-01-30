@@ -1,0 +1,28 @@
+ion-button{
+    --background: var(--ion-color-primary-contrast);
+    --color: var(--ion-color-primary);
+}
+
+ion-input{
+    --placeholder-color: var(--ion-color-primary-contrast);
+    --color: var(--ion-color-secondary);
+}
+
+.everything{
+    margin: 10%;
+    border: solid 1px black;
+}
+
+.register{
+    text-align: center;
+}
+
+/**
+:root{
+    background-color: var(--ion-color-secondary);
+    --color: var(--ion-color-secondary);
+}
+.name{
+    color: var(--ion-color-primary-contrast);
+}
+**/
