@@ -1,6 +1,8 @@
 ion-button{
     --background: var(--ion-color-primary-contrast);
     --color: var(--ion-color-primary);
+    position: relative;
+    margin-top: 80%;
 }
 
 ion-input{
@@ -8,6 +10,21 @@ ion-input{
     --color: var(--ion-color-secondary);
     margin-top: 5%;
     margin-bottom: 5%;
+    // &:focus{
+    //     --placeholder-color: var(--ion-color-light-contrast);
+    //     --color: black;
+    //     --ion-background-color: black;
+    // }
+}
+ion-input:focus{
+    --placeholder-color: var(--ion-color-light-contrast);
+    --color: black;
+    --ion-background-color: black;
+
+
+}
+.name:focus{
+    font-size: 200pt;
 }
 
 .everything{
@@ -27,6 +44,10 @@ ion-input{
 .others{
     margin-top: 10%;
     margin-bottom: 10%;
+}
+
+img{
+    padding: 10px;
 }
 /**
 :root{
