@@ -12,13 +12,17 @@ ion-input{
 
 .everything{
     margin: 10%;
-    border: solid 1px black;
+    // border: solid 1px black;
+    background-color: var(--ion-color-primary);
+    font: gibson-regular;
+    font-size: 16pt;
 }
 
 .title{
     color: var(--ion-color-secondary);
     text-align: center;
-    font-size: 3em;
+    font-size: 36pt;
+    font: gibson-semibold;
 }
 .others{
     margin-top: 10%;
