@@ -12,4 +12,11 @@ export class RegisterPage implements OnInit {
   ngOnInit() {
   }
 
+
+  showLabel = (labelName) => {
+    // do something to show the label above the input box
+    
+  }
+  
+
 }

@@ -49,6 +49,18 @@ ion-input:focus{
 img{
     padding: 10px;
 }
+
+.textBox {
+
+    .hidden{
+        display: none;
+    }
+    &:focus{
+        .hidden{
+            display: block;
+        }
+    }
+}
 /**
 :root{
     background-color: var(--ion-color-secondary);
