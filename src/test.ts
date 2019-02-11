@@ -6,6 +6,7 @@ import {
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting
 } from '@angular/platform-browser-dynamic/testing';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 declare const require: any;
 

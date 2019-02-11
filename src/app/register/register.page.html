@@ -2,7 +2,7 @@
 
 <div class="title">Register</div>
 
-<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+<form ngDefaultControl [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
 
     <ion-item>
         <ion-label [hidden] = "registrationForm.get('name').value == ''" position="floating">Full Name</ion-label>
