@@ -2,31 +2,62 @@
 
 <div class="title">Register</div>
 
-<div class="textBox">
-<p class="hidden">Full Name</p>
-<ion-input class="name" placeholder="Full Name"></ion-input>
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+
+    <ion-item>
+        <ion-label [hidden] = "registrationForm.get('name').value == ''" position="floating">Full Name</ion-label>
+        <ion-input formControlName="name" placeholder="Full Name" ngDefaultControl></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label [hidden] = "registrationForm.get('email').value == ''" position="floating">Email</ion-label>
+        <ion-input formControlName="email" placeholder="Email" ngDefaultControl></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label [hidden] = "registrationForm.get('password').value == ''" position="floating">Password</ion-label>
+        <ion-input formControlName="password" placeholder="Password" ngDefaultControl></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label [hidden] = "registrationForm.get('role').value == ''" position="floating">Role</ion-label>
+        <ion-input formControlName="role" placeholder="Role" ngDefaultControl></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label [hidden] = "registrationForm.get('phone').value == ''" position="floating">Phone Number</ion-label>
+        <ion-input formControlName="phone" placeholder="Phone Number" ngDefaultControl></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" [disabled]="!registrationForm.valid" expand="block" ngDefaultControl><img src="../../assets/icon/register-icon.png">Register</ion-button>
+
+
+</form>
+
 </div>
 
-<div class="textBox">
-<p class="hidden">Email</p>
-<ion-input class="email" placeholder="Email"></ion-input>
-</div>
-
-<div class="textBox">
-<p class="hidden">Password</p>
-<ion-input class="password others" placeholder="Password"></ion-input>
-</div>
-
-<div class="textBox">
-<p class="hidden">Role</p>
-<ion-input class="role others" placeholder="Role"></ion-input>
-</div>
-
-<div class="textBox">
-<p class="hidden">Phone Number</p>
-<ion-input class="phone others" placeholder="Phone Number"></ion-input>
-</div>
-
-<ion-button expand="block"><img src="../../assets/icon/register-icon.png">Register</ion-button>
-
-</div>
+<!-- <div class="textBox">
+        <p class="nameText"></p>
+        <ion-input class="name" (click)="showLabel(name)" placeholder="Full Name"></ion-input>
+        </div>
+        
+        <div class="textBox">
+        <p class="emailText hidden">Email</p>
+        <ion-input class="email" placeholder="Email"></ion-input>
+        </div>
+        
+        <div class="textBox">
+        <p class="passwordText">Password</p>
+        <ion-input class="password others" placeholder="Password"></ion-input>
+        </div>
+        
+        <div class="textBox">
+        <p class="roleText">Role</p>
+        <ion-input class="role others" placeholder="Role"></ion-input>
+        </div>
+        
+        <div class="textBox">
+        <p class="phoneText">Phone Number</p>
+        <ion-input class="phone others" placeholder="Phone Number"></ion-input>
+        </div>
+         -->
